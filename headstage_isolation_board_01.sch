@@ -2506,7 +2506,7 @@
 <text x="43.18" y="52.07" size="1.778" layer="91">headstage side</text>
 <text x="64.77" y="52.07" size="1.778" layer="91">aq. board side</text>
 <text x="167.64" y="-30.48" size="1.778" layer="91">VDD from aq board is &gt;3.5 V</text>
-<text x="33.02" y="63.5" size="1.778" layer="91">RHD decoupling module</text>
+<text x="60.96" y="58.42" size="1.778" layer="91">RHD decoupling module</text>
 <text x="152.4" y="12.7" size="2.54" layer="91" rot="R180">boost power supply input to +5.0V</text>
 <text x="-66.04" y="71.12" size="2.54" layer="91">3.3V reg. for RHD side supply</text>
 <text x="91.44" y="2.54" size="2.54" layer="91">3.3V reg for aq board side supply</text>
@@ -2516,7 +2516,7 @@
 <instance part="S2" gate="A" x="-55.88" y="-63.5" rot="R270"/>
 <instance part="GND6" gate="1" x="91.44" y="-63.5" rot="R270"/>
 <instance part="S1" gate="A" x="170.18" y="-58.42" rot="R90"/>
-<instance part="U$1" gate="G$1" x="33.02" y="66.04"/>
+<instance part="U$1" gate="G$1" x="60.96" y="60.96"/>
 <instance part="U$4" gate="G$1" x="101.6" y="-55.88"/>
 <instance part="U$6" gate="G$1" x="34.29" y="-53.34"/>
 <instance part="U$5" gate="G$1" x="-25.4" y="-45.72" rot="R180"/>
@@ -2833,7 +2833,7 @@
 <wire x1="-38.1" y1="-83.82" x2="-40.64" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="S2" gate="A" pin="GND"/>
 <wire x1="-40.64" y1="-81.28" x2="-48.26" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-40.64" y="-93.98" size="1.778" layer="95"/>
+<label x="-38.1" y="-96.52" size="1.778" layer="95"/>
 <wire x1="-38.1" y1="-83.82" x2="-38.1" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
