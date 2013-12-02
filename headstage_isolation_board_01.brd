@@ -8,7 +8,7 @@
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="12" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -27,10 +27,10 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="12" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="15" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="15" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2063,8 +2063,14 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="C9" library="RHD2000_eval_board" package="1206" value="22u" x="21.844" y="27.432" rot="R270"/>
 <element name="R3" library="RHD2000_eval_board" package="0603" value="30.9k" x="21.844" y="48.514" rot="R90"/>
 <element name="R4" library="RHD2000_eval_board" package="0603" value="95.3k" x="24.384" y="44.704"/>
-<element name="C12" library="RHD2000_eval_board" package="0603" value="100n" x="48.768" y="13.716" rot="R90"/>
-<element name="C13" library="RHD2000_eval_board" package="0603" value="100n" x="31.496" y="12.192" rot="R180"/>
+<element name="C12" library="RHD2000_eval_board" package="0603" value="100n" x="48.768" y="13.716" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.768" y="17.78" size="0.762" layer="25" font="vector" ratio="10" rot="R90" align="center-right"/>
+<attribute name="VALUE" x="48.768" y="15.494" size="0.762" layer="27" font="vector" ratio="10" rot="R90" align="center-left"/>
+</element>
+<element name="C13" library="RHD2000_eval_board" package="0603" value="100n" x="31.496" y="12.192" smashed="yes" rot="R180">
+<attribute name="NAME" x="28.448" y="13.716" size="0.762" layer="25" font="vector" ratio="10" rot="R180" align="center-right"/>
+<attribute name="VALUE" x="29.718" y="12.192" size="0.762" layer="27" font="vector" ratio="10" rot="R180" align="center-left"/>
+</element>
 <element name="C14" library="RHD2000_eval_board" package="0603" value="100n" x="35.306" y="27.686"/>
 <element name="C15" library="RHD2000_eval_board" package="0603" value="100n" x="26.416" y="13.716"/>
 <element name="C16" library="RHD2000_eval_board" package="0603" value="100n" x="35.56" y="39.116" rot="R180"/>
