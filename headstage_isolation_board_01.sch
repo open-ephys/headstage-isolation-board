@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2582,28 +2582,28 @@
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="MISO2+" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="MISO2+"/>
 <pinref part="U$4" gate="G$1" pin="DOUT1+"/>
 <wire x1="111.76" y1="-45.72" x2="162.56" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="MISO2-" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="MISO2-"/>
 <pinref part="U$4" gate="G$1" pin="DOUT1-"/>
 <wire x1="111.76" y1="-48.26" x2="162.56" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="MISO1+" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="MISO1+"/>
 <pinref part="U$4" gate="G$1" pin="DOUT2+"/>
 <wire x1="111.76" y1="-53.34" x2="162.56" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="MISO1-" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="MISO1-"/>
 <pinref part="U$4" gate="G$1" pin="DOUT2-"/>
@@ -2678,7 +2678,7 @@
 <wire x1="15.24" y1="-45.72" x2="16.51" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="SCLK-" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="SCLK-"/>
 <wire x1="124.46" y1="-78.74" x2="129.54" y2="-78.74" width="0.1524" layer="91"/>
@@ -2687,7 +2687,7 @@
 <pinref part="U$7" gate="G$1" pin="RIN1+"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="SCLK+" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="SCLK+"/>
 <wire x1="124.46" y1="-76.2" x2="127" y2="-76.2" width="0.1524" layer="91"/>
@@ -2696,7 +2696,7 @@
 <pinref part="U$7" gate="G$1" pin="RIN1-"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="MOSI-" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="MOSI-"/>
 <wire x1="124.46" y1="-71.12" x2="127" y2="-71.12" width="0.1524" layer="91"/>
@@ -2705,7 +2705,7 @@
 <pinref part="U$7" gate="G$1" pin="RIN2+"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="MOSI+" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="MOSI+"/>
 <wire x1="124.46" y1="-68.58" x2="132.08" y2="-60.96" width="0.1524" layer="91"/>
@@ -2713,7 +2713,7 @@
 <pinref part="U$7" gate="G$1" pin="RIN2-"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="CS-" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="!CS!-"/>
 <wire x1="119.38" y1="-96.52" x2="121.92" y2="-96.52" width="0.1524" layer="91"/>
@@ -2722,7 +2722,7 @@
 <pinref part="U$8" gate="G$1" pin="RIN2+"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="CS+" class="0">
 <segment>
 <pinref part="S1" gate="A" pin="!CS!+"/>
 <wire x1="119.38" y1="-93.98" x2="137.16" y2="-76.2" width="0.1524" layer="91"/>
