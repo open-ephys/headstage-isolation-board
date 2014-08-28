@@ -2187,6 +2187,40 @@
 <rectangle x1="-1.6002" y1="-0.8128" x2="-1.0922" y2="0.8128" layer="51"/>
 <rectangle x1="1.0922" y1="-0.8128" x2="1.6002" y2="0.8128" layer="51"/>
 </package>
+<package name="OMNETICS_PZN-12-AA">
+<wire x1="-2.2225" y1="3.9878" x2="2.2225" y2="3.9878" width="0.1524" layer="21"/>
+<wire x1="2.2225" y1="3.9878" x2="2.2225" y2="2.2098" width="0.1524" layer="21"/>
+<wire x1="2.2225" y1="2.2098" x2="2.2225" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="-2.2225" y1="-0.3302" x2="-2.2225" y2="2.2098" width="0.1524" layer="21"/>
+<wire x1="-2.2225" y1="2.2098" x2="-2.2225" y2="3.9878" width="0.1524" layer="21"/>
+<wire x1="-1.5875" y1="-0.3302" x2="-1.5875" y2="-0.4445" width="0.1524" layer="21"/>
+<wire x1="-0.9525" y1="-0.3302" x2="-0.9525" y2="-0.4445" width="0.1524" layer="21"/>
+<wire x1="1.5875" y1="-0.3302" x2="1.5875" y2="-0.4445" width="0.1524" layer="21"/>
+<smd name="B4" x="-0.3175" y="-1.016" dx="0.381" dy="0.762" layer="1" rot="R180"/>
+<smd name="B3" x="0.3175" y="-1.016" dx="0.381" dy="0.762" layer="1" rot="R180"/>
+<smd name="B5" x="-0.9525" y="-1.016" dx="0.381" dy="0.762" layer="1" rot="R180"/>
+<smd name="B2" x="0.9525" y="-1.016" dx="0.381" dy="0.762" layer="1" rot="R180"/>
+<smd name="B6" x="-1.5875" y="-1.016" dx="0.381" dy="0.762" layer="1" rot="R180"/>
+<smd name="B1" x="1.5875" y="-1.016" dx="0.381" dy="0.762" layer="1" rot="R180"/>
+<smd name="T6" x="-1.5875" y="-2.159" dx="0.381" dy="1.016" layer="1" rot="R180"/>
+<smd name="T5" x="-0.9525" y="-2.159" dx="0.381" dy="1.016" layer="1" rot="R180"/>
+<smd name="T4" x="-0.3175" y="-2.159" dx="0.381" dy="1.016" layer="1" rot="R180"/>
+<smd name="T3" x="0.3175" y="-2.159" dx="0.381" dy="1.016" layer="1" rot="R180"/>
+<smd name="T2" x="0.9525" y="-2.159" dx="0.381" dy="1.016" layer="1" rot="R180"/>
+<smd name="T1" x="1.5875" y="-2.159" dx="0.381" dy="1.016" layer="1" rot="R180"/>
+<text x="-2.54" y="-3.6195" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="-2.2225" y1="-0.3302" x2="-1.5875" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="-1.5875" y1="-0.3302" x2="-0.9525" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="-0.9525" y1="-0.3302" x2="-0.3175" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="-0.3175" y1="-0.3302" x2="0.3175" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="0.3175" y1="-0.3302" x2="0.9525" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="0.9525" y1="-0.3302" x2="1.5875" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="1.5875" y1="-0.3302" x2="2.2225" y2="-0.3302" width="0.1524" layer="21"/>
+<wire x1="-0.3175" y1="-0.3302" x2="-0.3175" y2="-0.4445" width="0.1524" layer="21"/>
+<wire x1="0.3175" y1="-0.3302" x2="0.3175" y2="-0.4445" width="0.1524" layer="21"/>
+<wire x1="0.9525" y1="-0.3302" x2="0.9525" y2="-0.4445" width="0.1524" layer="21"/>
+<wire x1="-2.2225" y1="2.2098" x2="2.2225" y2="2.2098" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TPS79301">
@@ -2241,6 +2275,26 @@
 <text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="RHD2000-CABLE">
+<wire x1="25.4" y1="5.08" x2="-25.4" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="5.08" x2="-25.4" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-7.62" x2="25.4" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-7.62" x2="25.4" y2="5.08" width="0.254" layer="94"/>
+<text x="25.4" y="-8.89" size="1.778" layer="95" font="vector" rot="R180">&gt;NAME</text>
+<text x="12.7" y="-8.89" size="1.778" layer="95" font="vector" rot="R180">&gt;VALUE</text>
+<pin name="MISO2-" x="10.16" y="7.62" length="short" rot="R270"/>
+<pin name="MISO1+" x="5.08" y="7.62" length="short" rot="R270"/>
+<pin name="MISO2+" x="12.7" y="7.62" length="short" rot="R270"/>
+<pin name="VDD" x="20.32" y="7.62" length="short" rot="R270"/>
+<pin name="GND" x="17.78" y="7.62" length="short" direction="pwr" rot="R270"/>
+<pin name="MOSI-" x="-5.08" y="7.62" length="short" rot="R270"/>
+<pin name="SCLK+" x="-10.16" y="7.62" length="short" rot="R270"/>
+<pin name="MISO1-" x="2.54" y="7.62" length="short" rot="R270"/>
+<pin name="MOSI+" x="-2.54" y="7.62" length="short" rot="R270"/>
+<pin name="!CS!-" x="-20.32" y="7.62" length="short" rot="R270"/>
+<pin name="!CS!+" x="-17.78" y="7.62" length="short" rot="R270"/>
+<pin name="SCLK-" x="-12.7" y="7.62" length="short" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2424,6 +2478,33 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="RHD2000-CABLE-DAQ-SIDE" prefix="S">
+<description>Omnetics PZN-12-AA RHD2000 socket - DAQ side</description>
+<gates>
+<gate name="A" symbol="RHD2000-CABLE" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="OMNETICS_PZN-12-AA">
+<connects>
+<connect gate="A" pin="!CS!+" pad="B1"/>
+<connect gate="A" pin="!CS!-" pad="T1"/>
+<connect gate="A" pin="GND" pad="T6"/>
+<connect gate="A" pin="MISO1+" pad="B4"/>
+<connect gate="A" pin="MISO1-" pad="T4"/>
+<connect gate="A" pin="MISO2+" pad="B5"/>
+<connect gate="A" pin="MISO2-" pad="T5"/>
+<connect gate="A" pin="MOSI+" pad="B3"/>
+<connect gate="A" pin="MOSI-" pad="T3"/>
+<connect gate="A" pin="SCLK+" pad="B2"/>
+<connect gate="A" pin="SCLK-" pad="T2"/>
+<connect gate="A" pin="VDD" pad="B6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2501,6 +2582,7 @@
 <part name="C16" library="RHD2000_eval_board" deviceset="C" device="_0603" value="100n"/>
 <part name="C17" library="RHD2000_eval_board" deviceset="C" device="_0603" value="100n"/>
 <part name="C18" library="RHD2000_eval_board" deviceset="C" device="_0603" value="100n"/>
+<part name="S3" library="RHD2000_eval_board" deviceset="RHD2000-CABLE-DAQ-SIDE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2578,6 +2660,7 @@
 <instance part="C16" gate="C" x="35.56" y="-33.02" rot="R180"/>
 <instance part="C17" gate="C" x="78.74" y="-93.98"/>
 <instance part="C18" gate="C" x="99.06" y="-38.1" rot="R90"/>
+<instance part="S3" gate="A" x="-93.98" y="-63.5" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2642,7 +2725,7 @@
 <pinref part="U$10" gate="G$1" pin="VIB"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="MISO2-_ISOLATED" class="0">
 <segment>
 <pinref part="S2" gate="A" pin="MISO2-"/>
 <pinref part="U$6" gate="G$1" pin="RIN1-"/>
@@ -2651,7 +2734,7 @@
 <wire x1="12.7" y1="-73.66" x2="-48.26" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="MISO1+_ISOLATED" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RIN2+"/>
 <wire x1="16.51" y1="-53.34" x2="10.16" y2="-53.34" width="0.1524" layer="91"/>
@@ -2660,7 +2743,7 @@
 <wire x1="10.16" y1="-68.58" x2="-48.26" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="MISO1-V" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RIN2-"/>
 <wire x1="7.62" y1="-55.88" x2="16.51" y2="-55.88" width="0.1524" layer="91"/>
@@ -2669,7 +2752,7 @@
 <wire x1="7.62" y1="-66.04" x2="-48.26" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="MISO2+_ISOLATED" class="0">
 <segment>
 <pinref part="S2" gate="A" pin="MISO2+"/>
 <wire x1="-48.26" y1="-76.2" x2="15.24" y2="-76.2" width="0.1524" layer="91"/>
@@ -2730,14 +2813,14 @@
 <pinref part="U$8" gate="G$1" pin="RIN2-"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="CS+_ISOLATED" class="0">
 <segment>
 <pinref part="S2" gate="A" pin="!CS!+"/>
 <wire x1="-27.94" y1="-25.4" x2="-48.26" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="DOUT1+"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="CS-_ISOLATED" class="0">
 <segment>
 <pinref part="S2" gate="A" pin="!CS!-"/>
 <wire x1="-27.94" y1="-22.86" x2="-48.26" y2="-43.18" width="0.1524" layer="91"/>
@@ -2775,7 +2858,7 @@
 <junction x="48.26" y="-86.36"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="SCLK-_ISOLATED" class="0">
 <segment>
 <pinref part="S2" gate="A" pin="SCLK-"/>
 <wire x1="-48.26" y1="-50.8" x2="-43.18" y2="-45.72" width="0.1524" layer="91"/>
@@ -2783,7 +2866,7 @@
 <wire x1="-43.18" y1="-45.72" x2="-35.56" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="SCLK+_ISOLATED" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="DOUT2+"/>
 <pinref part="S2" gate="A" pin="SCLK+"/>
@@ -2791,7 +2874,7 @@
 <wire x1="-43.18" y1="-48.26" x2="-48.26" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="MOSI-_ISOLATED" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="DOUT1-"/>
 <pinref part="S2" gate="A" pin="MOSI-"/>
@@ -2799,7 +2882,7 @@
 <wire x1="-43.18" y1="-53.34" x2="-48.26" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="MOSI+_ISOLATED" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="DOUT1+"/>
 <pinref part="S2" gate="A" pin="MOSI+"/>
@@ -3372,6 +3455,78 @@
 <segment>
 <pinref part="C15" gate="C" pin="2"/>
 <junction x="-38.1" y="-88.9"/>
+</segment>
+</net>
+<net name="CCS-" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="!CS!-"/>
+<wire x1="-86.36" y1="-43.18" x2="-81.28" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CCS+" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="!CS!+"/>
+<wire x1="-86.36" y1="-45.72" x2="-81.28" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CSCLK-" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="SCLK-"/>
+<wire x1="-86.36" y1="-50.8" x2="-81.28" y2="-50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CSCLK+" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="SCLK+"/>
+<wire x1="-86.36" y1="-53.34" x2="-81.28" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CMOSI-" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="MOSI-"/>
+<wire x1="-86.36" y1="-58.42" x2="-81.28" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CMOSI+" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="MOSI+"/>
+<wire x1="-86.36" y1="-60.96" x2="-81.28" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CMISO1-" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="MISO1-"/>
+<wire x1="-86.36" y1="-66.04" x2="-81.28" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CMISO1+" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="MISO1+"/>
+<wire x1="-86.36" y1="-68.58" x2="-81.28" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CMISO2-" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="MISO2-"/>
+<wire x1="-86.36" y1="-73.66" x2="-81.28" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CMISO2+" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="MISO2+"/>
+<wire x1="-86.36" y1="-76.2" x2="-81.28" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CGND" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="GND"/>
+<wire x1="-86.36" y1="-81.28" x2="-81.28" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CVDD" class="0">
+<segment>
+<pinref part="S3" gate="A" pin="VDD"/>
+<wire x1="-86.36" y1="-83.82" x2="-81.28" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
