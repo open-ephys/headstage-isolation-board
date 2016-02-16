@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2519,7 +2519,6 @@
 </class>
 </classes>
 <parts>
-<part name="S2" library="RHD2000" deviceset="RHD2000-CABLE-AMP-SIDE" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="RHD2000" deviceset="RHD2000-CABLE-AMP-SIDE" device=""/>
 <part name="U$1" library="open-ephys" deviceset="OPEN_EPHYS_LOGO" device=""/>
@@ -2597,7 +2596,6 @@
 <text x="-66.04" y="30.48" size="2.54" layer="91">3.6V  regulator for RHD</text>
 </plain>
 <instances>
-<instance part="S2" gate="A" x="-55.88" y="-63.5" rot="R270"/>
 <instance part="GND6" gate="1" x="91.44" y="-63.5" rot="R270"/>
 <instance part="S1" gate="A" x="170.18" y="-58.42" rot="R90"/>
 <instance part="U$1" gate="G$1" x="60.96" y="60.96"/>
@@ -2660,7 +2658,7 @@
 <instance part="C16" gate="C" x="35.56" y="-33.02" rot="R180"/>
 <instance part="C17" gate="C" x="78.74" y="-93.98"/>
 <instance part="C18" gate="C" x="99.06" y="-38.1" rot="R90"/>
-<instance part="S3" gate="A" x="-93.98" y="-63.5" rot="R270"/>
+<instance part="S3" gate="A" x="-68.58" y="-63.5" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2727,11 +2725,11 @@
 </net>
 <net name="MISO2-_ISOLATED" class="0">
 <segment>
-<pinref part="S2" gate="A" pin="MISO2-"/>
 <pinref part="U$6" gate="G$1" pin="RIN1-"/>
 <wire x1="16.51" y1="-48.26" x2="12.7" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-48.26" x2="12.7" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-73.66" x2="-48.26" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-73.66" x2="-60.96" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="MISO2-"/>
 </segment>
 </net>
 <net name="MISO1+_ISOLATED" class="0">
@@ -2739,26 +2737,26 @@
 <pinref part="U$6" gate="G$1" pin="RIN2+"/>
 <wire x1="16.51" y1="-53.34" x2="10.16" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-53.34" x2="10.16" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="S2" gate="A" pin="MISO1+"/>
-<wire x1="10.16" y1="-68.58" x2="-48.26" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-68.58" x2="-60.96" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="MISO1+"/>
 </segment>
 </net>
-<net name="MISO1-V" class="0">
+<net name="MISO1-_ISOLATED" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RIN2-"/>
 <wire x1="7.62" y1="-55.88" x2="16.51" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-55.88" x2="7.62" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="S2" gate="A" pin="MISO1-"/>
-<wire x1="7.62" y1="-66.04" x2="-48.26" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-66.04" x2="-60.96" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="MISO1-"/>
 </segment>
 </net>
 <net name="MISO2+_ISOLATED" class="0">
 <segment>
-<pinref part="S2" gate="A" pin="MISO2+"/>
-<wire x1="-48.26" y1="-76.2" x2="15.24" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="-76.2" x2="15.24" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-76.2" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="RIN1+"/>
 <wire x1="15.24" y1="-45.72" x2="16.51" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="MISO2+"/>
 </segment>
 </net>
 <net name="SCLK-" class="0">
@@ -2813,18 +2811,12 @@
 <pinref part="U$8" gate="G$1" pin="RIN2-"/>
 </segment>
 </net>
-<net name="CS+_ISOLATED" class="0">
-<segment>
-<pinref part="S2" gate="A" pin="!CS!+"/>
-<wire x1="-27.94" y1="-25.4" x2="-48.26" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="DOUT1+"/>
-</segment>
-</net>
 <net name="CS-_ISOLATED" class="0">
 <segment>
-<pinref part="S2" gate="A" pin="!CS!-"/>
 <wire x1="-27.94" y1="-22.86" x2="-48.26" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="DOUT1-"/>
+<pinref part="S3" gate="A" pin="!CS!-"/>
+<wire x1="-48.26" y1="-43.18" x2="-60.96" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -2860,34 +2852,29 @@
 </net>
 <net name="SCLK-_ISOLATED" class="0">
 <segment>
-<pinref part="S2" gate="A" pin="SCLK-"/>
 <wire x1="-48.26" y1="-50.8" x2="-43.18" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="DOUT2-"/>
 <wire x1="-43.18" y1="-45.72" x2="-35.56" y2="-45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SCLK+_ISOLATED" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="DOUT2+"/>
-<pinref part="S2" gate="A" pin="SCLK+"/>
-<wire x1="-35.56" y1="-48.26" x2="-43.18" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-48.26" x2="-48.26" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="SCLK-"/>
+<wire x1="-48.26" y1="-50.8" x2="-60.96" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI-_ISOLATED" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="DOUT1-"/>
-<pinref part="S2" gate="A" pin="MOSI-"/>
 <wire x1="-35.56" y1="-53.34" x2="-43.18" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="-53.34" x2="-48.26" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="MOSI-"/>
+<wire x1="-48.26" y1="-58.42" x2="-60.96" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI+_ISOLATED" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="DOUT1+"/>
-<pinref part="S2" gate="A" pin="MOSI+"/>
 <wire x1="-35.56" y1="-55.88" x2="-43.18" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="-55.88" x2="-48.26" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="MOSI+"/>
+<wire x1="-48.26" y1="-60.96" x2="-60.96" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -2918,10 +2905,10 @@
 <net name="GND_ISOLATED" class="0">
 <segment>
 <wire x1="-38.1" y1="-83.82" x2="-40.64" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="S2" gate="A" pin="GND"/>
-<wire x1="-40.64" y1="-81.28" x2="-48.26" y2="-81.28" width="0.1524" layer="91"/>
 <label x="-38.1" y="-96.52" size="1.778" layer="95"/>
 <wire x1="-38.1" y1="-83.82" x2="-38.1" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="S3" gate="A" pin="GND"/>
+<wire x1="-40.64" y1="-81.28" x2="-60.96" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="GND"/>
@@ -3022,12 +3009,13 @@
 <net name="VDD_ISOLATED" class="0">
 <segment>
 <wire x1="-45.72" y1="-86.36" x2="-45.72" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="S2" gate="A" pin="VDD"/>
 <wire x1="-45.72" y1="-88.9" x2="-45.72" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-86.36" x2="-48.26" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-48.26" y="-96.52" size="1.778" layer="95" rot="R180"/>
 <pinref part="C15" gate="C" pin="1"/>
 <junction x="-45.72" y="-88.9"/>
+<pinref part="S3" gate="A" pin="VDD"/>
+<wire x1="-48.26" y1="-83.82" x2="-60.96" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="-5.08" y="22.86" size="1.778" layer="95"/>
@@ -3457,76 +3445,21 @@
 <junction x="-38.1" y="-88.9"/>
 </segment>
 </net>
-<net name="CCS-" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="!CS!-"/>
-<wire x1="-86.36" y1="-43.18" x2="-81.28" y2="-43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CCS+" class="0">
+<net name="CS+_ISOLATED" class="0">
 <segment>
 <pinref part="S3" gate="A" pin="!CS!+"/>
-<wire x1="-86.36" y1="-45.72" x2="-81.28" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-25.4" x2="-48.26" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="DOUT1+"/>
+<wire x1="-60.96" y1="-45.72" x2="-48.26" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CSCLK-" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="SCLK-"/>
-<wire x1="-86.36" y1="-50.8" x2="-81.28" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CSCLK+" class="0">
+<net name="SCLK+_ISOLATED" class="0">
 <segment>
 <pinref part="S3" gate="A" pin="SCLK+"/>
-<wire x1="-86.36" y1="-53.34" x2="-81.28" y2="-53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CMOSI-" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="MOSI-"/>
-<wire x1="-86.36" y1="-58.42" x2="-81.28" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CMOSI+" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="MOSI+"/>
-<wire x1="-86.36" y1="-60.96" x2="-81.28" y2="-60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CMISO1-" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="MISO1-"/>
-<wire x1="-86.36" y1="-66.04" x2="-81.28" y2="-66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CMISO1+" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="MISO1+"/>
-<wire x1="-86.36" y1="-68.58" x2="-81.28" y2="-68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CMISO2-" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="MISO2-"/>
-<wire x1="-86.36" y1="-73.66" x2="-81.28" y2="-73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CMISO2+" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="MISO2+"/>
-<wire x1="-86.36" y1="-76.2" x2="-81.28" y2="-76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CGND" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="GND"/>
-<wire x1="-86.36" y1="-81.28" x2="-81.28" y2="-81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CVDD" class="0">
-<segment>
-<pinref part="S3" gate="A" pin="VDD"/>
-<wire x1="-86.36" y1="-83.82" x2="-81.28" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="DOUT2+"/>
+<wire x1="-35.56" y1="-48.26" x2="-43.18" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-48.26" x2="-48.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="-53.34" x2="-48.26" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
